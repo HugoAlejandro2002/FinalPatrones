@@ -12,9 +12,9 @@ public class AutoGasolina implements Auto {
     public void llenarCombustible(int cantidadGasolina) {
         if(cantidadGasolina >= 0 && cantidadGasolina <= 100){
             this.gasolinaActual = cantidadGasolina;
-            System.out.println("Monto de gasolina actual: " + gasolinaActual);
+            System.out.println("Llenando con: " + gasolinaActual);
         }else{
-            System.out.println("Rango de gasolina " + cantidadGasolina + " no valido!");
+            System.out.println("Es invalido " + cantidadGasolina );
         }
     }
 

@@ -9,7 +9,27 @@ public class Main {
 
         AdapterAutoElectrico autoElectrico = new AdapterAutoElectrico(new AutoEletrico());
 
+        System.out.println("Auto Gasolina");
+        autoGasolina.showInfo();
+        autoGasolina.llenarCombustible(45);
+        autoGasolina.showInfo();
 
+        System.out.println("Auto Diesel");
+        autoDiesel.showInfo();
+        autoDiesel.llenarCombustible(36);
+        autoDiesel.showInfo();
+
+
+        System.out.println("Auto Gasolina Especial");
+        autoGasolinaEspecial.showInfo();
+        autoGasolinaEspecial.llenarCombustible(13);
+        autoGasolinaEspecial.showInfo();
+
+
+        System.out.println("Auto Electrico");
+        autoElectrico.showInfo();
+        autoElectrico.llenarCombustible(31);
+        autoElectrico.showInfo();
     }
 
 }

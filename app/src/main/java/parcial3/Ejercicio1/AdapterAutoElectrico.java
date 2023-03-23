@@ -19,5 +19,6 @@ public class AdapterAutoElectrico implements Auto {
 
     @Override
     public void showInfo() {
+        autoEletrico.showInfo();
     }
 }

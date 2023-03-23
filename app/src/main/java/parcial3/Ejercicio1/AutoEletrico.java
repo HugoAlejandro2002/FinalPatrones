@@ -8,11 +8,11 @@ public class AutoEletrico {
     }
 
     public void cargar(int montoCarga){
-        if(montoCarga >= 0 && montoCarga <= 100){
+        if(montoCarga >= 0 && montoCarga <= 100 && montoCarga%2==0){
             this.porcentajeCargado = montoCarga;
-            System.out.println("Monto de carga actual: " + porcentajeCargado);
+            System.out.println("Llenando con: " + porcentajeCargado);
         }else{
-            System.out.println("Rango de carga " + montoCarga + " no valido!");
+            System.out.println("Es invalido, debe ser par " + montoCarga);
         }
     }
 
