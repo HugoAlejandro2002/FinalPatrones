@@ -14,7 +14,7 @@ public class Servidor implements IServer {
 
     @Override
     public void login(Usuario usuario) {
-        System.out.println("Servidor: " + nombreServidor + "> Usuario: " + usuario.getNombre() + " logueado");
+        System.out.println("Servidor: " + nombreServidor + "> Usuario: " + usuario.getNombre() + " logueado con id "+usuario.getId());
         usuariosLogueados.add(usuario);
     }
 
@@ -22,7 +22,7 @@ public class Servidor implements IServer {
     public void showUsuariosLogueados(){
         System.out.println("Servidor: " + nombreServidor + "> Usuarios logueados: ");
         for(Usuario usuario : usuariosLogueados){
-            System.out.println("\t" + "- Usuario: " + usuario.getNombre());
+            System.out.println("- Usuario: " + usuario.getNombre());
         }
     }
 
